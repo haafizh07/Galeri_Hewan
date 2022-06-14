@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import org.d3if4076.galeri_hewan.R
-import org.d3if4076.galeri_hewan.data.Hewan
+import org.d3if4076.galeri_hewan.model.Hewan
 
 class MainViewModel : ViewModel() {
     private val data = MutableLiveData<List<Hewan>>()

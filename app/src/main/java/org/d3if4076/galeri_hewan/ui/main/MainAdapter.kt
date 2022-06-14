@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import org.d3if4076.galeri_hewan.R
-import org.d3if4076.galeri_hewan.data.Hewan
+import org.d3if4076.galeri_hewan.model.Hewan
 import org.d3if4076.galeri_hewan.databinding.ListItemBinding
 
 class MainAdapter : RecyclerView.Adapter<MainAdapter.ViewHolder>() {
