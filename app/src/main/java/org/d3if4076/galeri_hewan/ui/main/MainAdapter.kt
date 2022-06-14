@@ -8,8 +8,13 @@ import org.d3if4076.galeri_hewan.R
 import org.d3if4076.galeri_hewan.data.Hewan
 import org.d3if4076.galeri_hewan.databinding.ListItemBinding
 
-class MainAdapter(private val data: List<Hewan>) :
-    RecyclerView.Adapter<MainAdapter.ViewHolder>() {
+class MainAdapter : RecyclerView.Adapter<MainAdapter.ViewHolder>() {
+    private val data = mutableListOf<Hewan>()
+    fun updateData(newData: List<Hewan>) {
+        data.clear()
+        data.addAll(newData)
+        notifyDataSetChanged()
+    }
     class ViewHolder(private val binding: ListItemBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(hewan: Hewan) = with(binding) {
             namaTextView.text = hewan.nama
