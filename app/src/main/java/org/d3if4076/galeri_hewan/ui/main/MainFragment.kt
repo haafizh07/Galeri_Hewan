@@ -1,6 +1,7 @@
 package org.d3if4076.galeri_hewan.ui.main
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,6 +16,7 @@ import org.d3if4076.galeri_hewan.network.ApiStatus
 
 
 class MainFragment : Fragment() {
+
 
     private val viewModel: MainViewModel by lazy {
         ViewModelProvider(this).get(MainViewModel::class.java)
