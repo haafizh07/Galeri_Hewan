@@ -12,6 +12,7 @@ import org.d3if4076.galeri_hewan.R
 import org.d3if4076.galeri_hewan.data.Hewan
 import org.d3if4076.galeri_hewan.databinding.FragmentMainBinding
 
+
 class MainFragment : Fragment() {
 
     private val viewModel: MainViewModel by lazy {
