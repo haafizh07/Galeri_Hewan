@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">galeri_hewan</string>
+    <string name="message">%1$s diklik!</string>
+
 </resources>

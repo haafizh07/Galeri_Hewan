@@ -2,6 +2,7 @@ package org.d3if4076.galeri_hewan
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import org.d3if4076.galeri_hewan.databinding.ListItemBinding
 
@@ -12,6 +13,11 @@ class MainAdapter(private val data: List<Hewan>) :
             namaTextView.text = hewan.nama
             latinTextView.text = hewan.namaLatin
             imageView.setImageResource(hewan.imageResId)
+            root.setOnClickListener {
+                val message = root.context.getString(R.string.message, hewan.nama)
+                Toast.makeText(root.context, message, Toast.LENGTH_LONG).show()
+            }
+
         }
     }
 
